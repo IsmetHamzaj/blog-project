@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 5rem;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c9fec9;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    position: fixed;
+}
+
+.header .logo {
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.header .logo span {
+    color: black;
+}
+
+.header .logo:hover {
+    text-decoration: underline;
+}
+
+.header .logo span:hover {
+    text-decoration: underline;
+}
+
+
+
+.header .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .3s ease;
+}
+
+.header .navbar a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+.header .navbar .header_btn {
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid green;
+    background: transparent;
+}
+
+.header .navbar .header_btn:hover {
+    background-color: #9eff9e;
+}
+
+
+.blogs { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 0%;
+    height: 100vh;
+}
+
+.blogs h3 {
+    padding-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.blogs table {
+    width: 100%;
+    height: fit-content;
+}
+
+.blogs table th {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blogs table td {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+
+.blogs table td button {
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid green;
+    background: transparent;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.blogs table td button a {
+    text-decoration: none;
+    color: black;
+}
+
+.blogs table td button:hover {
+    background: green;
+    color: white;
+}
+
+.blogs table td button a:hover {
+    color: white;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 0%;
+    height: 100vh;
+}
+
+.users h3 {
+    padding-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.users table {
+    width: 100%;
+    height: fit-content;
+}
+
+
+.users table th {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.users table td {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.users table td button {
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid green;
+    background: transparent;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.users table td button a {
+    text-decoration: none;
+    color: black;
+}
+
+.users table td button:hover {
+    background: green;
+    color: white;
+}
+
+.users table td button a:hover {
+    color: white;
+}

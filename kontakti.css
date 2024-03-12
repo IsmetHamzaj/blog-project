@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c9fec9;
+}
+
+
+.header {
+    background-color: #c9fec9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header .logo {
+    text-decoration: none;
+}
+
+.header .logo p {
+    color: black;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.header .logo p span {
+    color: green;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: green;
+    transition: .3s all ease;
+}
+
+
+.header .navbar a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+
+
+.header .emri {
+    font-size: 21px;
+    color: black;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+
+.header .emri:hover {
+    color: green;
+    transition: .3s ease-in-out;
+}
+.header .profile-logout {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.header .profile-logout .shkyqu{
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: green;
+    transition: .3s all ease;
+    letter-spacing: 2px;
+}
+.header .profile-logout .shkyqu-box {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+.header .profile-logout .shkyqu-box:hover {
+    background-color: green;
+}
+
+.header .profile-logout .shkyqu:hover {
+    color: white;
+}
+
+.profile-logout .name {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    text-transform: capitalize;
+    color: green;
+}
+
+.addimg {
+    background: none;
+    width: 25px;
+    height: 25px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 15%;
+    gap: 50px;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.container div input {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid green;
+    padding-bottom: 5px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.container button {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid green;
+    background: transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: .3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+.container button:hover {
+    background-color: green;
+    color: white;
+}

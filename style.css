@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 5rem;
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c9fec9;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.container .title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    padding: 100px 0px;
+}
+
+.container .register-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.container .register-form input {
+    margin: 10px 0px;
+    outline: none;
+    border: 3px solid white;
+    background: transparent;
+    color: black;
+    text-align: center;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: .5s all ease;
+}
+
+.container .register-form input:hover {
+    background-color: white;
+    color: #c9fec9;
+}
+
+.container .register-form button {
+    height: 50px;
+    font-size: 15px;
+    width: 100%;
+    color: black;
+    margin-left: 0px;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid green;
+    background: transparent;
+    margin-bottom: 10px;
+}
+.container .register-form button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.container .register-form .login-register-text {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .register-form a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .register-form a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.container .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+
+.container .login-form input {
+    margin: 10px 0px;
+    outline: none;
+    border: 3px solid white;
+    background: transparent;
+    color: black;
+    text-align: center;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: .5s all ease;
+}
+
+.container .login-form input:hover {
+    background-color: white;
+    color: #c9fec9;
+}
+
+
+.container .login-form button {
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
+    font-size: 15px;
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid green;
+    background: transparent;
+    margin-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+.container .login-form button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.container .login-form .register-login-text {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container .login-form a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .login-form a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+
+
+
+.header {
+    background-color: #c9fec9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header .logo {
+    text-decoration: none;
+}
+
+.header .logo p {
+    color: black;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.header .logo p span {
+    color: green;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: green;
+    transition: .3s all ease;
+}
+
+
+.header .navbar a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+
+
+.header .emri {
+    font-size: 21px;
+    color: black;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+
+.header .emri:hover {
+    color: green;
+    transition: .3s ease-in-out;
+}
+.header .profile-logout {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.header .profile-logout .shkyqu{
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: green;
+    transition: .3s all ease;
+    letter-spacing: 2px;
+}
+.header .profile-logout .shkyqu-box {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+.header .profile-logout .shkyqu-box:hover {
+    background-color: green;
+}
+
+.header .profile-logout .shkyqu:hover {
+    color: white;
+}
+
+.profile-logout .name {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    text-transform: capitalize;
+    color: green;
+}
+
+.addimg {
+    background: none;
+    width: 25px;
+    height: 25px;
+}
+
+
+.create-post {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.create-post input {
+    margin: 10px 0px;
+    outline: none;
+    border: 3px solid white;
+    background: transparent;
+    color: black;
+    text-align: center;
+    width: 30%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: .5s all ease;
+}
+
+.create-post input:hover {
+    background-color: white;
+    color: #c9fec9;
+}
+
+
+.create-post button {
+    height: 50px;
+    font-size: 15px;
+    width: 30%;
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid green;
+    background: transparent;
+    margin-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+.create-post button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.data-display {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.data-display .title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    padding: 100px 0px;
+    font-size: 25px;
+}
+.btn {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border-radius: 15px;
+    font-size: 18px;
+    border: 2px solid green;
+    background: transparent;
+    margin: 30px;
+}
+
+.btn a {
+    color: green;
+}
+.btn:hover {
+    background: green;
+}
+.btn a:hover {
+    color: white;
+}
+.title {
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 150px;
+    color: green;
+}
+.table{
+    border-color: white;
+    border-width: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    width: 70%;
+    margin-top: 100px;
+}
+
+.table tr td {
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.table tr td button {
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid green;
+    background: transparent;
+    margin: 0px 10px;
+    width: 100px;
+}
+
+.table tr td button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.table tr td button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.table tr td button a:hover {
+    color: white;
+}
+
+
+.profile-data {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 100px;
+    margin-left: 35.3%;
+    text-align: center;
+}
+
+
+.profile-data h3 {
+    text-transform: capitalize;
+    color: green;
+    font-size: 18px;
+}
+
+
+.profile-data button {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border-radius: 15px;
+    font-size: 18px;
+    border: 2px solid green;
+    background: transparent;
+}
+
+
+.profile-data button:hover {
+    color: white;
+    cursor: pointer;    
+    background: green;
+}
+
+
+.profile-data button a {
+    color: green;
+}
+.profile-data button a:hover {
+    color: white;
+}
